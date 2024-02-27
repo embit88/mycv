@@ -1,0 +1,12 @@
+{
+  "autoload": {
+    "psr-4": {
+      "vfx\\": "vendor/vfx",
+      "app\\": "app"
+    }
+  },
+  "require": {
+    "php": "^8.1",
+    "ext-pdo": "*"
+  }
+}
