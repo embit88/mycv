@@ -32,7 +32,7 @@ nav.menu .wrapper-logo h1 {
     padding: 10px;
     color: var(--main-color);
     font-family: monospace;
-    font-size: 30px;
+    font-size: 1.7em;
 }
 
 nav.menu .wrapper-logo h1 a {
@@ -376,7 +376,7 @@ footer div.language-block .language-active {
     }
 
     nav.menu .wrapper-logo h1 {
-        font-size: 25px;
+        font-size: 1.6em;
     }
 
     nav.menu ul a {
@@ -386,6 +386,9 @@ footer div.language-block .language-active {
 }
 
 @media (max-width: 500px) {
+    nav.menu .wrapper-logo h1 {
+        font-size: 1.5em;
+    }
     nav.menu ul a {
         font-size: 0.8em;
         padding: 1px;
@@ -398,6 +401,9 @@ footer div.language-block .language-active {
 }
 
 @media (max-width: 400px) {
+    nav.menu .wrapper-logo h1 {
+        font-size: 1.4em;
+    }
     nav.menu ul a {
         font-size: 0.7em;
     }

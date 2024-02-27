@@ -1,5 +1,5 @@
 /node_modules
-/tmp/logs
-/tmp/cache
+/config/database_prod.php
+/tmp/cache/*
 /public/build
 /.idea

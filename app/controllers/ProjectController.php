@@ -30,12 +30,7 @@ class ProjectController extends BaseController
             }
 
             $this->setData(['project' => $project]);
-
         }
-
-
-
-
     }
 
     public function apiAction(): void
