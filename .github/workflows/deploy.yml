@@ -16,6 +16,8 @@ jobs:
         run: chmod -R 777 tmp/cache
       - name: Set logs required directory permissions
         run: chmod -R 777 tmp/logs
+      - name: Clear directory
+        run: rm -rf tmp/cache/*
       - name: Install NPM dependencies
         run: npm install
       - name: Minify CSS and JS files
