@@ -11,11 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Install composer dependencies
-        run: composer install --optimize-autoloader --no-dev
+        run: composer install --optimize-autoloader
       - name: Set cache required directory permissions
-        run: chmod -R 777 storage tmp/cache
+        run: chmod -R 777 tmp/cache
       - name: Set logs required directory permissions
-        run: chmod -R 777 storage tmp/logs
+        run: chmod -R 777 tmp/logs
       - name: Install NPM dependencies
         run: npm install
       - name: Minify CSS and JS files
