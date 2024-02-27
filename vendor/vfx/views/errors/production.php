@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ошибка</title>
+    <title>Error</title>
 </head>
 <body>
 
-<h1>Произошла ошибка</h1>
-<p><a href="<?=PATH;?>">Go back to Home</a></p>
+<h1>Error</h1>
+<p><a href="<?= \vfx\App::$request->site_url() . '/' . \vfx\App::$app->getProperty('language_slug') ?>"><?= SITE_NAME ?></a></p>
 
 </body>
 </html>
