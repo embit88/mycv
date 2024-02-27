@@ -12,4 +12,6 @@ require_once __DIR__ . '/../config/routes.php';
 
 require_once __DIR__ . '/../vendor/vfx/helpers/functions.php';
 
+
+debug('222', 1);
 new App();

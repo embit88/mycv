@@ -1245,3 +1245,5 @@ Stack trace:
 =================
 [2024-02-27 02:18:15] Текст ошибки: Страница не найдена | Файл: F:\OSPanel\domains\fushtei.com.test\app\controllers\ProjectController.php | Строка: 29
 =================
+[2024-02-27 18:51:13] Текст ошибки: Ошибка при подклбчении к БД SQLSTATE[HY000] [1044] Access denied for user 'Embit'@'%' to database 'fushtei_com' | Файл: F:\OSPanel\domains\fushtei.com.test\vendor\vfx\Database.php | Строка: 31
+=================
