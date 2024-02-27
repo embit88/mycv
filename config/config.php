@@ -2,6 +2,6 @@
 
 return [
 
-    'name' => 'VFX',
-    'debug' => false,
+    'name' => 'Fushtei',
+
 ];

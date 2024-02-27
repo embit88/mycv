@@ -1,6 +1,6 @@
 <?php
 
-const DEBUG = 1;
+const DEBUG = 0;
 const DEFAULT_THEME =  'default_theme';
 const ADMIN_URL =  'admin';
 const NO_IMAGE =  'no_image.png';
