@@ -7,7 +7,7 @@
     <base href="<?= \vfx\App::$request->site_url() ?>">
     <meta charset="UTF-8">
     <meta name="theme-color" content="#ffffff">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="noindex, nofollow">
     <link rel="icon" href="<?= image('favicon.png') ?>" type="image/x-icon">
     <link rel="shortcut icon" href="<?= image('favicon.png') ?>" type="image/x-icon">
 
