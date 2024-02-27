@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  laravel-tests:
+  deploy-site:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
