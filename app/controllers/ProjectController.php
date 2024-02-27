@@ -29,6 +29,7 @@ class ProjectController extends BaseController
                 throw new \Exception('Страница не найдена', 404);
             }
 
+            $this->setMeta(SITE_NAME . ' | ' . $project['name'], SITE_NAME . ' | ' . $project['name']);
             $this->setData(['project' => $project]);
         }
     }
