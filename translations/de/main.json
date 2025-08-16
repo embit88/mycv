@@ -1,6 +1,6 @@
 {
   "info": {
-    "name": "Vadim Fushtei",
+    "name": "Vadym Fushtei",
     "profession": "Webentwickler"
   },
   "skills": [
@@ -30,20 +30,31 @@
       "profession": "Online-Shop-Administrator",
       "site": "https://usilok.com.ua/",
       "data": "11-03-2021 - 16-05-2024",
-      "text": "Ich arbeitete im Online-Shop Usilok. Meine Aufgaben: Erstellung der Website mit OpenCart 3, Produktparsing über OpenCart-Erweiterungen, Schaltung von Werbung in Google Ads, Generierung von Feeds. Derzeit umfasst die Arbeit die Pflege der Website, Behebung von Fehlern und Parsing neuer Produkte."
+      "text": "Ich habe als PHP-Entwickler in einem Unternehmen gearbeitet, das im Online-Verkauf tätig ist. Zu meinen Aufgaben gehörte die Entwicklung eines Administrationsbereichs für eine neue Website mit dem Laravel-Framework, die Übertragung von Funktionen von der alten Website auf OpenCart, die Datenbankplanung und die Durchführung weiterer damit zusammenhängender Aufgaben."
     }
   },
   "title": {
     "skills": "Fähigkeiten",
     "about_me": "Über mich",
     "experience": "Berufserfahrung",
+    "impressum": "Impressum",
     "error": "Fehler 404"
   },
   "text": {
-    "about_me": "Ich wurde am 26. Januar 1996 in der Ukraine geboren. Ich habe die Nationale Wirtschaftsuniversität Ternopil mit dem Fachbereich Computer-Informationstechnologien abgeschlossen. Ich interessiere mich für Sport, Poker, Programmierung und Musik. Ich bin verheiratet, habe ein Kind und lebe derzeit mit meiner Familie in Hamburg, Deutschland."
+    "about_me": "Ich wurde am 26. Januar 1996 in der Ukraine geboren. Ich habe die Nationale Wirtschaftsuniversität Ternopil mit dem Schwerpunkt „Computer- und Informationstechnologien“ abgeschlossen. Ich interessiere mich für Sport, Poker, Programmierung und Musik. Ich bin verheiratet, habe ein Kind, und momentan leben wir als Familie in Hamburg, Deutschland.",
+    "footer": "Alle Rechte vorbehalten."
   },
   "seo": {
     "meta_title": "Vadim Fushtei - Webentwickler",
     "meta_description": "Vadim Fushtei - Webentwickler"
+  },
+  "legal": {
+    "title_1": "Angaben gemäß § 5 TMG",
+    "text_1": "Vadym Fushtei, Lühmannstraße 11, 21075 Hamburg, Deutschland",
+    "title_2": "Kontakt",
+    "title_3": "Haftung für Inhalte",
+    "text_3": "Als privater Websitebetreiber bin ich für eigene Inhalte auf diesen Seiten verantwortlich. Inhalte externer Links werden nur im Zeitpunkt der Nutzung geprüft; für fremde Inhalte ist die Haftung ausgeschlossen.",
+    "title_4": "Hinweis",
+    "text_4": "Dies ist ein privater Blog ohne kommerzielle Zwecke."
   }
 }

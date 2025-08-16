@@ -1,30 +1,30 @@
-name: Deploy CI
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  deploy-site:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Clear directory
-        run: rm -rf .next/*
-      - name: Install NPM dependencies
-        run: npm install
-      - name: Minify CSS and JS files
-        run: npm run build
-      - name: Start
-        run: npm run start
-      - name: rsync deployments
-        uses: burnett01/rsync-deployments@6.0.0
-        with:
-          switches: -avzr --delete
-          path: .
-          remote_host: ${{ secrets.REMOTE_HOST }}
-          remote_user: ${{ secrets.REMOTE_USER }}
-          remote_port: ${{ secrets.REMOTE_PORT }}
-          remote_key: ${{ secrets.REMOTE_KEY }}
-          remote_path: ${{ secrets.REMOTE_PATH }}
+#name: Deploy CI
+#
+#on:
+#  push:
+#    branches:
+#      - main
+#
+#jobs:
+#  deploy-site:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v3
+#      - name: Clear directory
+#        run: rm -rf .next/*
+#      - name: Install NPM dependencies
+#        run: npm install
+#      - name: Minify CSS and JS files
+#        run: npm run build
+#      - name: Start NPM
+#        run: npm run start
+#      - name: Rsync Deployments
+#        uses: burnett01/rsync-deployments@6.0.0
+#        with:
+#          switches: -avzr --delete
+#          path: .
+#          remote_host: ${{ secrets.REMOTE_HOST }}
+#          remote_user: ${{ secrets.REMOTE_USER }}
+#          remote_port: ${{ secrets.REMOTE_PORT }}
+#          remote_key: ${{ secrets.REMOTE_KEY }}
+#          remote_path: ${{ secrets.REMOTE_PATH }}

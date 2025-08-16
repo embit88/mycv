@@ -1,6 +1,6 @@
 {
   "info": {
-    "name": "Vadim Fushtei",
+    "name": "Vadym Fushtei",
     "profession": "Web Developer"
   },
   "skills": [
@@ -23,27 +23,38 @@
       "profession": "PHP Developer (Laravel)",
       "site": "https://svit-matrasiv.com.ua/",
       "data": "15-04-2020 - 20-11-2020",
-      "text": "I worked as a PHP intern in a company engaged in online sales. My task was to create an admin panel for the new website using the Laravel framework. I also handled transferring functionality from the old site to OpenCart, designing the database, and other tasks."
+      "text": "I worked as a PHP developer in a company engaged in online sales. My responsibilities included developing an administrative panel for a new website using the Laravel framework, transferring functionality from the old site to OpenCart, designing the database, and handling other related tasks."
     },
     "3": {
       "name": "Usilok",
       "profession": "Online Store Administrator",
       "site": "https://usilok.com.ua/",
       "data": "11-03-2021 - 16-05-2024",
-      "text": "I worked at the online store Usilok. My tasks included creating the website using OpenCart 3, parsing products via OpenCart extensions, running Google Ads campaigns, and generating feeds. Currently, the work involves website maintenance, bug fixes, and parsing new products."
+      "text": "I worked at the online store \"Usilok.\" My responsibilities included creating a website on OpenCart 3, parsing products using OpenCart extensions, running Google Ads campaigns, and generating feeds. Currently, I handle website maintenance, bug fixing, and adding new products."
     }
   },
   "title": {
     "skills": "Skills",
     "about_me": "About Me",
     "experience": "Work Experience",
+    "impressum": "Legal Notice",
     "error": "Error 404"
   },
   "text": {
-    "about_me": "I was born on January 26, 1996, in Ukraine. I graduated from Ternopil National Economic University with a degree in Computer Information Technologies. I am interested in sports, poker, programming, and music. I am married, have a child, and currently live with my family in Hamburg, Germany."
+    "about_me": "I was born on January 26, 1996, in Ukraine. I graduated from Ternopil National Economic University with a degree in Computer Information Technologies. I am interested in sports, poker, programming, and music. I am married, have a child, and currently live with my family in Hamburg, Germany.",
+    "footer": "All rights reserved."
   },
   "seo": {
     "meta_title": "Vadim Fushtei - Web Developer",
     "meta_description": "Vadim Fushtei - Web Developer"
+  },
+  "legal": {
+    "title_1": "Information according to § 5 TMG",
+    "text_1": "Vadym Fushtei, Lühmannstraße 11, 21075 Hamburg, Germany",
+    "title_2": "Contact",
+    "title_3": "Liability for content",
+    "text_3": "As a private website owner, I am responsible for my own content on these pages. Content of external links is checked only when used; liability for third-party content is excluded.",
+    "title_4": "Note",
+    "text_4": "This is a private blog without commercial purposes."
   }
 }
