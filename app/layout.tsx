@@ -16,7 +16,9 @@ export default function RootLayout({children,}: {
     return (
         <html lang={locale}>
             <body className="flex flex-col h-screen">
-                {children}
+                <div className="bg-gray-100">
+                    {children}
+                </div>
             </body>
         </html>
     );

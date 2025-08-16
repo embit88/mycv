@@ -17,8 +17,8 @@ export default async function Impressum({params}: { params: Promise<{ locale: st
     const translation = await getTranslations((await params).locale);
 
     return (
-        <div className="bg-gray-100 min-h-screen">
-            <div className="container mx-auto py-12 px-4">
+        <>
+            <div className="container mx-auto py-8">
                 <LanguageSelect url="impressum" />
                 <h1 className="text-3xl font-bold mb-8 text-center">{translation.title.impressum}</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -43,8 +43,7 @@ export default async function Impressum({params}: { params: Promise<{ locale: st
                     </div>
                 </div>
             </div>
-
             <Footer locale={(await params).locale} />
-        </div>
+        </>
     );
 }
