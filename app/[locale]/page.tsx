@@ -40,9 +40,9 @@ export default async function Home({params}: { params: Promise<{ locale: string 
                                 <h1 className="text-xl uppercase font-bold tracking-wider">{translation.info.name}</h1>
                                 <p className="text-gray-600 text-sm m-2">{translation.info.profession}</p>
                                 <a href={`mailto:${appConfig.email}`}
-                                   className="text-gray-800 m-2 underline">{appConfig.email}</a>
+                                   className="text-gray-800 m-2 underline hover:no-underline">{appConfig.email}</a>
                                 <a href={`tel:${appConfig.phone}`}
-                                   className="text-gray-800 m-2 underline">{appConfig.phone}</a>
+                                   className="text-gray-800 m-2 underline hover:no-underline">{appConfig.phone}</a>
                                 <Social />
                             </div>
                             <hr className="my-6 border-t border-gray-300"/>
@@ -66,7 +66,7 @@ export default async function Home({params}: { params: Promise<{ locale: string 
                             <p>
                                 {translation.text.about_me}
                             </p>
-                            <h2 className="text-xl font-bold mt-6 mb-4">{translation.title.experience}</h2>
+                            <h2 className="text-xl font-bold mt-10 mb-4">{translation.title.experience}</h2>
                             {experiences.map((experience, index) => (
                                 <div key={index} className="mb-6 mt-10">
                                     <div className="flex justify-between flex-wrap gap-2 w-full">
