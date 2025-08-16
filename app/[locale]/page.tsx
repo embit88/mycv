@@ -37,7 +37,7 @@ export default async function Home({params}: { params: Promise<{ locale: string 
                                     <img src={appConfig.image}
                                          className="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0" alt=""/>
                                 ) : null}
-                                <h1 className="text-xl text-gray-700 uppercase font-bold tracking-wider">{translation.info.name}</h1>
+                                <h1 className="text-xl uppercase font-bold tracking-wider">{translation.info.name}</h1>
                                 <p className="text-gray-600 text-sm m-2">{translation.info.profession}</p>
                                 <a href={`mailto:${appConfig.email}`}
                                    className="text-gray-800 m-2 underline">{appConfig.email}</a>
@@ -47,8 +47,8 @@ export default async function Home({params}: { params: Promise<{ locale: string 
                             </div>
                             <hr className="my-6 border-t border-gray-300"/>
                             <div className="flex flex-col text-center">
-                                <span
-                                    className="text-gray-700 uppercase font-bold tracking-wider mb-2">{translation.title.skills}</span>
+                                <h2
+                                    className="uppercase font-bold tracking-wider mb-4">{translation.title.skills}</h2>
                                 <ul>
                                     {translation.skills.map((skill: string) => (
                                         <li key={skill} className="mb-2">
@@ -63,7 +63,7 @@ export default async function Home({params}: { params: Promise<{ locale: string 
                         <LanguageSelect url="" />
                         <div className="bg-white shadow rounded-xs p-6">
                             <h2 className="text-xl font-bold mb-4">{translation.title.about_me}</h2>
-                            <p className="text-gray-700">
+                            <p>
                                 {translation.text.about_me}
                             </p>
                             <h2 className="text-xl font-bold mt-6 mb-4">{translation.title.experience}</h2>

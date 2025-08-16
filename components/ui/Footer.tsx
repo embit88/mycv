@@ -9,10 +9,10 @@ const Footer = async ({locale}: { locale: string }) => {
     return (
         <footer className="flex flex-col space-y-10 justify-center m-10">
             <Social />
-            <nav className="flex justify-center flex-wrap gap-6 text-gray-500 font-medium">
+            <nav className="flex justify-center flex-wrap gap-6 text-gray-700 font-medium">
                 <a className="hover:text-gray-900" href={`/${locale}/impressum`} target="_blank">{translation.title.impressum}</a>
             </nav>
-            <p className="text-center text-gray-700 font-medium">&copy; {currentYear}. {translation.text.footer}</p>
+            <p className="text-center font-medium">&copy; {currentYear}. {translation.text.footer}</p>
         </footer>
     );
 };

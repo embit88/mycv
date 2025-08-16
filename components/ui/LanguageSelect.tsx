@@ -11,7 +11,7 @@ const LanguageSelect = async ({url}: { url: string }) => {
                         <Link
                             href={`/${locale}/${url}`}
                             key={`select-lang-${index}`}
-                            className="text-xs font-semibold flex justify-center"
+                            className="text-xs font-semibold flex justify-center hover:underline"
                         >
                             {locale.toUpperCase()}
                         </Link>
