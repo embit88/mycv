@@ -1,0 +1,51 @@
+{
+  "info": {
+    "name": "Vadim Fushtei",
+    "profession": "Web Developer",
+    "email": "fyshtey@gmail.com",
+    "phone_number": "+4915116529334"
+  },
+  "skills": [
+    "PHP (Symfony, Laravel)",
+    "JavaScript (React, Vue)",
+    "SQL (MySQL, PostgreSQL)",
+    "HTML / CSS (Tailwind)",
+    "Git, Docker"
+  ],
+  "experiences": {
+    "1": {
+      "name": "bStream",
+      "profession": "PHP Developer (Intern)",
+      "site": "",
+      "data": "22-01-2018 - 30-06-2018",
+      "text": "I completed an internship at an outsourcing company. My tasks included fixing bugs in an online store based on osCommerce and developing features for the company's internal CRM system using the Laravel 5 framework. I finished the work due to the company's closure."
+    },
+    "2": {
+      "name": "World of Mattresses",
+      "profession": "PHP Developer (Laravel)",
+      "site": "https://svit-matrasiv.com.ua/",
+      "data": "15-04-2020 - 20-11-2020",
+      "text": "I worked as a PHP intern in a company engaged in online sales. My task was to create an admin panel for the new website using the Laravel framework. I also handled transferring functionality from the old site to OpenCart, designing the database, and other tasks."
+    },
+    "3": {
+      "name": "Usilok",
+      "profession": "Online Store Administrator",
+      "site": "https://usilok.com.ua/",
+      "data": "11-03-2021 - 16-05-2024",
+      "text": "I worked at the online store Usilok. My tasks included creating the website using OpenCart 3, parsing products via OpenCart extensions, running Google Ads campaigns, and generating feeds. Currently, the work involves website maintenance, bug fixes, and parsing new products."
+    }
+  },
+  "title": {
+    "skills": "Skills",
+    "about_me": "About Me",
+    "experience": "Work Experience",
+    "error": "Error 404"
+  },
+  "text": {
+    "about_me": "I was born on January 26, 1996, in Ukraine. I graduated from Ternopil National Economic University with a degree in Computer Information Technologies. I am interested in sports, poker, programming, and music. I am married, have a child, and currently live with my family in Hamburg, Germany."
+  },
+  "seo": {
+    "meta_title": "Vadim Fuschtey - Web Developer",
+    "meta_description": "Vadim Fuschtey - Web Developer"
+  }
+}

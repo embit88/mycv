@@ -1,0 +1,51 @@
+{
+  "info": {
+    "name": "Vadim Fushtei",
+    "profession": "Webentwickler",
+    "email": "fyshtey@gmail.com",
+    "phone_number": "+4915116529334"
+  },
+  "skills": [
+    "PHP (Symfony, Laravel)",
+    "JavaScript (React, Vue)",
+    "SQL (MySQL, PostgreSQL)",
+    "HTML / CSS (Tailwind)",
+    "Git, Docker"
+  ],
+  "experiences": {
+    "1": {
+      "name": "bStream",
+      "profession": "PHP-Entwickler (Praktikant)",
+      "site": "",
+      "data": "22-01-2018 - 30-06-2018",
+      "text": "Ich absolvierte ein Praktikum bei einem Outsourcing-Unternehmen. Meine Aufgaben umfassten: Fehlerbehebung in einem Online-Shop auf der osCommerce-Plattform sowie die Entwicklung von Funktionen für das interne CRM-System des Unternehmens mit dem Laravel 5 Framework. Ich beendete die Arbeit aufgrund der Schließung des Unternehmens."
+    },
+    "2": {
+      "name": "Welt der Matratzen",
+      "profession": "PHP-Entwickler (Laravel)",
+      "site": "https://svit-matrasiv.com.ua/",
+      "data": "15-04-2020 - 20-11-2020",
+      "text": "Ich arbeitete als PHP-Praktikant in einem Unternehmen für Online-Verkäufe. Meine Aufgabe bestand darin, ein Administrationspanel für die neue Website mit dem Laravel-Framework zu erstellen. Außerdem war ich für die Übertragung von Funktionen von der alten Website auf OpenCart, die Datenbankgestaltung und andere Aufgaben zuständig."
+    },
+    "3": {
+      "name": "Usilok",
+      "profession": "Online-Shop-Administrator",
+      "site": "https://usilok.com.ua/",
+      "data": "11-03-2021 - 16-05-2024",
+      "text": "Ich arbeitete im Online-Shop Usilok. Meine Aufgaben: Erstellung der Website mit OpenCart 3, Produktparsing über OpenCart-Erweiterungen, Schaltung von Werbung in Google Ads, Generierung von Feeds. Derzeit umfasst die Arbeit die Pflege der Website, Behebung von Fehlern und Parsing neuer Produkte."
+    }
+  },
+  "title": {
+    "skills": "Fähigkeiten",
+    "about_me": "Über mich",
+    "experience": "Berufserfahrung",
+    "error": "Fehler 404"
+  },
+  "text": {
+    "about_me": "Ich wurde am 26. Januar 1996 in der Ukraine geboren. Ich habe die Nationale Wirtschaftsuniversität Ternopil mit dem Fachbereich Computer-Informationstechnologien abgeschlossen. Ich interessiere mich für Sport, Poker, Programmierung und Musik. Ich bin verheiratet, habe ein Kind und lebe derzeit mit meiner Familie in Hamburg, Deutschland."
+  },
+  "seo": {
+    "meta_title": "Vadim Fuschtey - Webentwickler",
+    "meta_description": "Vadim Fuschtey - Webentwickler"
+  }
+}

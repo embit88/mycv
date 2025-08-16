@@ -1,34 +1,32 @@
-name: Deploy CI
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  deploy-site:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Install composer dependencies
-        run: composer install --optimize-autoloader
-      - name: Set cache required directory permissions
-        run: chmod -R 777 tmp/cache
-      - name: Set logs required directory permissions
-        run: chmod -R 777 tmp/logs
-      - name: Clear directory
-        run: rm -rf tmp/cache/*
-      - name: Install NPM dependencies
-        run: npm install
-      - name: Minify CSS and JS files
-        run: npm run build
-      - name: rsync deployments
-        uses: burnett01/rsync-deployments@6.0.0
-        with:
-          switches: -avzr --delete
-          path: .
-          remote_host: ${{ secrets.REMOTE_HOST }}
-          remote_user: ${{ secrets.REMOTE_USER }}
-          remote_port: ${{ secrets.REMOTE_PORT }}
-          remote_key: ${{ secrets.REMOTE_KEY }}
-          remote_path: ${{ secrets.REMOTE_PATH }}
+#name: Deploy CI
+#
+#on:
+#  push:
+#    branches:
+#      - main
+#
+#jobs:
+#  deploy:
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#      - uses: actions/checkout@v3
+#
+#      - name: Copy files to server via rsync
+#        uses: burnett01/rsync-deployments@6.0.0
+#        with:
+#          switches: -avzr --delete
+#          path: .
+#          remote_host: ${{ secrets.REMOTE_HOST }}
+#          remote_user: ${{ secrets.REMOTE_USER }}
+#          remote_port: ${{ secrets.REMOTE_PORT }}
+#          remote_key: ${{ secrets.REMOTE_KEY }}
+#          remote_path: ${{ secrets.REMOTE_PATH }}
+#
+#      - name: Rebuild & restart Docker
+#        run: |
+#          ssh -i ${{ secrets.REMOTE_KEY }} -p ${{ secrets.REMOTE_PORT }} ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} "
+#            cd ${{ secrets.REMOTE_PATH }} &&
+#            docker compose down &&
+#            docker compose up -d --build
+#          "
