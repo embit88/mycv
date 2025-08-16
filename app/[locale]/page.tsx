@@ -62,13 +62,13 @@ export default async function Home({params}: { params: Promise<{ locale: string 
                     <div className="col-span-4 lg:col-span-9">
                         <LanguageSelect url="" />
                         <div className="bg-white shadow rounded-xs p-6">
-                            <h2 className="text-xl font-bold mb-4">{translation.title.about_me}</h2>
+                            <h2 className="text-xl font-bold mb-6">{translation.title.about_me}</h2>
                             <p>
                                 {translation.text.about_me}
                             </p>
-                            <h2 className="text-xl font-bold mt-10 mb-4">{translation.title.experience}</h2>
+                            <h2 className="text-xl font-bold mt-10 mb-6">{translation.title.experience}</h2>
                             {experiences.map((experience, index) => (
-                                <div key={index} className="mb-6 mt-10">
+                                <div key={index} className="mb-6">
                                     <div className="flex justify-between flex-wrap gap-2 w-full">
                                        <span className="text-gray-700 font-bold">
                                             {experience.profession} - {experience.name}{" "}
