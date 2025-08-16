@@ -1,0 +1,17 @@
+services:
+  app:
+    image: node:24.5.0-alpine3.22
+    volumes:
+      - ./:/var/www
+    ports:
+      - "3002:3000"
+    container_name: fushtei_app
+    networks:
+      - fushtei_network
+    working_dir: /var/www
+    command: |
+      sh -c "rm -rf .next && npm install && npm run build && npm run start"
+
+networks:
+  fushtei_network:
+    driver: bridge
