@@ -1,9 +1,7 @@
 {
   "info": {
     "name": "Vadim Fushtei",
-    "profession": "Webentwickler",
-    "email": "fyshtey@gmail.com",
-    "phone_number": "+4915116529334"
+    "profession": "Webentwickler"
   },
   "skills": [
     "PHP (Symfony, Laravel)",
