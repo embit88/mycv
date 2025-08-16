@@ -1,9 +1,9 @@
 import React from 'react';
 import {getTranslations} from "@/utils/functions";
 import appConfig from "@/appConfig";
-import Link from "next/link";
-import Footer from "@/app/components/ui/Footer";
-import Social from "@/app/components/ui/Social";
+import Footer from "@/components/ui/Footer";
+import Social from "@/components/ui/Social";
+import LanguageSelect from "@/components/ui/LanguageSelect";
 
 interface Experience {
     name: string;
@@ -31,7 +31,7 @@ export default async function Home({params}: { params: Promise<{ locale: string 
             <div className="container mx-auto py-8">
                 <div className="grid grid-cols-4 lg:grid-cols-12 gap-6 px-4">
                     <div className="col-span-4 lg:col-span-3">
-                        <div className="bg-white shadow rounded-lg p-6">
+                        <div className="bg-white shadow rounded-xs p-6">
                             <div className="flex flex-col items-center">
                                 {appConfig.image ? (
                                     <img src={appConfig.image}
@@ -60,22 +60,8 @@ export default async function Home({params}: { params: Promise<{ locale: string 
                         </div>
                     </div>
                     <div className="col-span-4 lg:col-span-9">
-                        <div className="relative">
-                            <div className="flex space-x-4 right-5 top-3 absolute">
-                                {appConfig.locales.length > 0 ? (
-                                    appConfig.locales.map((locale, index) => (
-                                        <Link
-                                            href={`/${locale}`}
-                                            key={`select-lang-${index}`}
-                                            className="text-xs font-semibold flex justify-center"
-                                        >
-                                            {locale.toUpperCase()}
-                                        </Link>
-                                    ))
-                                ) : null}
-                            </div>
-                        </div>
-                        <div className="bg-white shadow rounded-lg p-6">
+                        <LanguageSelect url="" />
+                        <div className="bg-white shadow rounded-xs p-6">
                             <h2 className="text-xl font-bold mb-4">{translation.title.about_me}</h2>
                             <p className="text-gray-700">
                                 {translation.text.about_me}

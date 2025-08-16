@@ -1,6 +1,6 @@
 import React from "react";
 import {getTranslations} from "@/utils/functions";
-import Social from "@/app/components/ui/Social";
+import Social from "@/components/ui/Social";
 
 const Footer = async ({locale}: { locale: string }) => {
     const translation = await getTranslations(locale);
