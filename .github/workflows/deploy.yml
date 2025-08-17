@@ -33,4 +33,4 @@ jobs:
           port: ${{ secrets.REMOTE_PORT }}
           script: |
             cd ${{ secrets.REMOTE_PATH }}
-            sudo bash ./run-prod.sh
+            bash ./run-prod.sh
