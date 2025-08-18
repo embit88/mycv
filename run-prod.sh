@@ -9,7 +9,6 @@ echo "Останавливаем и удаляем контейнеры prod..."
 docker compose -f "$COMPOSE_FILE" down
 
 echo "Очищаем старые файлы на сервере (кроме .git если нужен)..."
-shopt -s extglob
 rm -rf $DEPLOY_PATH/!(.git)
 
 echo "Собираем и запускаем prod контейнеры..."
