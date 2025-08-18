@@ -18,17 +18,17 @@ jobs:
           switches: -avzr --delete
           path: .
           remote_host: ${{ secrets.REMOTE_HOST }}
-          remote_user: root
+          remote_user: ${{ secrets.REMOTE_USER }}
           remote_port: ${{ secrets.REMOTE_PORT }}
           remote_key: ${{ secrets.REMOTE_KEY }}
-          remote_path: ${{ secrets.REMOTE_PATH }}
+          remote_path: ${{ secrets.REMOTE_PATH }} # /var/www/vhosts/domain.com/httpdocs
 
       # Запускаем скрипт на сервере через SSH
       - name: Run production script
         uses: appleboy/ssh-action@v0.1.7
         with:
           host: ${{ secrets.REMOTE_HOST }}
-          username: root
+          username: ${{ secrets.REMOTE_USER }}
           key: ${{ secrets.REMOTE_KEY }}
           port: ${{ secrets.REMOTE_PORT }}
           script: |

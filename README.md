@@ -27,3 +27,6 @@ sudo chmod -R u+rwX /var/www/vhosts/mymein.com/httpdocs
 ProxyPreserveHost On
 ProxyPass / http://127.0.0.1:3000/
 ProxyPassReverse / http://127.0.0.1:3000/
+
+# PATH SITE
+/var/www/vhosts/domain.com/httpdocs
