@@ -19,9 +19,9 @@ jobs:
 
       - name: Fix permissions
         run: |
-          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no deploy@85.215.214.92 "
-          sudo chown -R deploy:deploy /var/www/vhosts/mymein.com/httpdocs &&
-          sudo chmod -R u+rwX /var/www/vhosts/mymein.com/httpdocs
+          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no deploy@85.215.214.92 \
+            "sudo chown -R deploy:deploy /var/www/vhosts/mymein.com/httpdocs &&
+             sudo chmod -R u+rwX /var/www/vhosts/mymein.com/httpdocs"
 
       # Копируем весь проект на сервер
       - name: Rsync Deployments
