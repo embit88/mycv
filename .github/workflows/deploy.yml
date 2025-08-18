@@ -15,7 +15,7 @@ jobs:
       - name: Rsync Deployments
         uses: burnett01/rsync-deployments@6.0.0
         with:
-          switches: -avzr --delete --chown=deploy:deploy --chmod=Du=rwx,Dg=rwx,Do=rx,Fu=rw,Fg=rw,Fo=r
+          switches: -avzr --delete
           path: .
           remote_host: ${{ secrets.REMOTE_HOST }}
           remote_user: ${{ secrets.REMOTE_USER }}
