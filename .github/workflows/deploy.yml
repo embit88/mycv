@@ -11,28 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup SSH key
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.REMOTE_KEY }}" > ~/.ssh/deploy_key
-          chmod 600 ~/.ssh/deploy_key
-
-      - name: Fix permissions
-        uses: appleboy/ssh-action@v0.1.7
-        with:
-          host: ${{ secrets.REMOTE_HOST }}
-          username: root
-          key: ${{ secrets.REMOTE_KEY }}
-          port: ${{ secrets.REMOTE_PORT }}
-          script: |
-            sudo chown -R ${{ secrets.REMOTE_USER }}:${{ secrets.REMOTE_USER }} /var/www/vhosts/mymein.com/httpdocs
-            sudo chmod -R u+rwX /var/www/vhosts/mymein.com/httpdocs
-
       # Копируем весь проект на сервер
       - name: Rsync Deployments
         uses: burnett01/rsync-deployments@6.0.0
         with:
-          switches: -avzr --delete
+          switches: -avzr --delete --chown=deploy:deploy --chmod=Du=rwx,Dg=rwx,Do=rx,Fu=rw,Fg=rw,Fo=r
           path: .
           remote_host: ${{ secrets.REMOTE_HOST }}
           remote_user: ${{ secrets.REMOTE_USER }}
