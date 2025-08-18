@@ -10,7 +10,7 @@ services:
       - fushtei_network
     working_dir: /var/www
     command: |
-      sh -c "rm -rf .next && npm install && npm run build && npm run start -- -H 0.0.0.0"
+      sh -c "rm -rf .next && rm -rf node_modules && npm install && npm run build && npm run start -- -H 0.0.0.0"
 
 networks:
   fushtei_network:
