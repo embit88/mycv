@@ -8,10 +8,22 @@
 1) In File: appConfig.ts
 
 # Deploy
+sudo adduser deploy
+sudo chsh -s /bin/bash deploy
 
-# допустим system user = mymeinuser
-mkdir -p /var/www/vhosts/system/mymein.com/home/mymein.com_ogzvy2ruozm/.ssh
-chmod 700 /var/www/vhosts/system/mymein.com/home/mymein.com_ogzvy2ruozm/.ssh
-echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGxcrn1aNt7p7ccB/Uraw7XcfIwB/+fhU7LlfT+JVVJq github-deploy" > /var/www/vhosts/system/mymein.com/home/mymein.com_ogzvy2ruozm/.ssh/authorized_keys
-chmod 600 /var/www/vhosts/system/mymein.com/home/mymein.com_ogzvy2ruozm/.ssh/authorized_keys
-chown -R mymein.com_ogzvy2ruozm:psacln /var/www/vhosts/system/mymein.com/home/mymein.com_ogzvy2ruozm/.ssh
+sudo usermod -aG docker deploy
+sudo newgrp docker
+
+sudo mkdir -p /home/deploy/.ssh
+sudo chmod 700 /home/deploy/.ssh
+sudo echo "ssh-rsa deploy_key" | sudo tee /home/deploy/.ssh/authorized_keys
+sudo chmod 600 /home/deploy/.ssh/authorized_keys
+sudo chown -R deploy:deploy /home/deploy/.ssh
+
+sudo chown -R deploy:deploy /var/www/vhosts/mymein.com/httpdocs
+sudo chmod -R u+rwX /var/www/vhosts/mymein.com/httpdocs
+
+# Apache & nginx Settings for domain:
+ProxyPreserveHost On
+ProxyPass / http://127.0.0.1:3000/
+ProxyPassReverse / http://127.0.0.1:3000/
