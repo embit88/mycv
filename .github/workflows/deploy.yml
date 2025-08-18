@@ -11,6 +11,18 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Setup SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.REMOTE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+      - name: Fix permissions
+        run: |
+          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no deploy@85.215.214.92 "
+          sudo chown -R deploy:deploy /var/www/vhosts/mymein.com/httpdocs &&
+          sudo chmod -R u+rwX /var/www/vhosts/mymein.com/httpdocs
+
       # Копируем весь проект на сервер
       - name: Rsync Deployments
         uses: burnett01/rsync-deployments@6.0.0
@@ -22,18 +34,6 @@ jobs:
           remote_port: ${{ secrets.REMOTE_PORT }}
           remote_key: ${{ secrets.REMOTE_KEY }}
           remote_path: ${{ secrets.REMOTE_PATH }}
-
-#      - name: Setup SSH key
-#        run: |
-#          mkdir -p ~/.ssh
-#          echo "${{ secrets.REMOTE_KEY }}" > ~/.ssh/deploy_key
-#          chmod 600 ~/.ssh/deploy_key
-#
-#      - name: Fix permissions
-#        run: |
-#          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no deploy@85.215.214.92 "
-#            sudo chown -R deploy:deploy /var/www/vhosts/mymein.com/httpdocs &&
-#            sudo chmod -R u+rwX /var/www/vhosts/mymein.com/httpdocs
 
       # Запускаем скрипт на сервере через SSH
       - name: Run production script
